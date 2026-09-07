@@ -15,7 +15,7 @@
       "webhookId": "4d2af0c5-1feb-4b46-8c11-9460eec0f4a6",
       "credentials": {
         "typeformApi": {
-          "id": "TLT0ZA4XeE0EZrfG",
+          "id": "(Add your typeform account personal token ID or ID)",
           "name": "Typeform account"
         }
       }
@@ -166,7 +166,7 @@
       "webhookId": "f8c40835-bb78-4ed2-88dc-b1471885a69d",
       "credentials": {
         "gmailOAuth2": {
-          "id": "iSjWkKBxyfGV3cOa",
+          "id": "(Add your Gmail OAuth2 ID)",
           "name": "Gmail account"
         }
       }
@@ -189,7 +189,7 @@
       "webhookId": "2a206eed-1406-4c92-bb97-5f571e837250",
       "credentials": {
         "gmailOAuth2": {
-          "id": "iSjWkKBxyfGV3cOa",
+          "id": "(Add your Gmail OAuth2 ID)",
           "name": "Gmail account"
         }
       }
@@ -214,7 +214,7 @@
       "webhookId": "23d69a60-532f-401e-8ca3-7629e63cf189",
       "credentials": {
         "gmailOAuth2": {
-          "id": "iSjWkKBxyfGV3cOa",
+          "id": "(Add your Gmail OAuth2 ID)",
           "name": "Gmail account"
         }
       }
@@ -348,7 +348,7 @@
       "name": "Append row in sheet",
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "ROhqHt7Otw2aKbQQ",
+          "id": "(Add your Google Sheets OAuth2 ID)",
           "name": "Google Sheets account"
         }
       }
@@ -482,7 +482,7 @@
       "name": "Append row in sheet1",
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "ROhqHt7Otw2aKbQQ",
+          "id": "(Add your Google Sheets OAuth2 ID)",
           "name": "Google Sheets account"
         }
       }
@@ -725,20 +725,6 @@
         ]
       ]
     }
-  },
-  "pinData": {
-    "Typeform Trigger": [
-      {
-        "Full Name": "(Enter name of your choice)",
-        "Phone Number": "(Enter phone number of your choice)",
-        "What is your email? (Optional)": "(Enter email of your choice)",
-        "What do you need help with?": "Not sure",
-        "Are you a new or returning patient? (Optional)": "Returning Patient",
-        "On a scale of 1-10, how much pain or discomfort are you in right now?": 0,
-        "Do you have dental insurance? (Optional)": "Yes",
-        "Preferred day/time to be contacted (Optional)": "2027-02-02"
-      }
-    ]
   },
   "meta": {
     "templateCredsSetupCompleted": true,
