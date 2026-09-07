@@ -616,7 +616,7 @@
       "name": "Append row in sheet2",
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "ROhqHt7Otw2aKbQQ",
+          "id": "(Add your Google Sheets OAuth2 ID here)",
           "name": "Google Sheets account"
         }
       }
@@ -729,9 +729,9 @@
   "pinData": {
     "Typeform Trigger": [
       {
-        "Full Name": "Raheel",
-        "Phone Number": "+923045864914",
-        "What is your email? (Optional)": "shayanwaseem.dev@gmail.com",
+        "Full Name": "(Enter name of your choice)",
+        "Phone Number": "(Enter phone number of your choice)",
+        "What is your email? (Optional)": "(Enter email of your choice)",
         "What do you need help with?": "Not sure",
         "Are you a new or returning patient? (Optional)": "Returning Patient",
         "On a scale of 1-10, how much pain or discomfort are you in right now?": 0,
