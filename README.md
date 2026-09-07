@@ -97,4 +97,4 @@ This is a working prototype built as a learning project, tested end-to-end with 
 
 ## Author
 
-Built by Shayan Waseem (Aevoniq) as part of a hands-on n8n automation learning track.
+Built by Shayan Waseem as part of a hands-on n8n automation learning track.
