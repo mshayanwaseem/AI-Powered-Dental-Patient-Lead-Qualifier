@@ -1,0 +1,96 @@
+<!-- This is for The Urgent Lead Inquiry (Hot Category) -->
+<div style="font-family: Arial, sans-serif; max-width: 500px; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+
+  <h2 style="color: #d32f2f; margin-bottom: 5px;">🚨 Urgent Patient Inquiry</h2>
+  <p style="color: #666; margin-top: 0;">Immediate callback recommended</p>
+
+  <hr style="border: none; border-top: 1px solid #eee;">
+
+  <table style="width: 100%; margin-top: 15px; font-size: 15px;">
+    <tr>
+      <td style="padding: 6px 0; color: #888; width: 130px;">Patient Name</td>
+      <td style="padding: 6px 0; font-weight: bold;">{{ $('Typeform Trigger').item.json["Full Name"] }}</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px 0; color: #888;">Phone</td>
+      <td style="padding: 6px 0; font-weight: bold;">{{ $('Typeform Trigger').item.json["Phone Number"] }}</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px 0; color: #888;">Service Needed</td>
+      <td style="padding: 6px 0;">{{ $('Typeform Trigger').item.json["What do you need help with?"] }}</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px 0; color: #888;">Pain Level</td>
+      <td style="padding: 6px 0; font-weight: bold; color: #d32f2f;">{{ $('Typeform Trigger').item.json["On a scale of 1-10, how much pain or discomfort are you in right now?"] }}/10</td>
+    </tr>
+  </table>
+
+  <hr style="border: none; border-top: 1px solid #eee; margin-top: 15px;">
+
+  <p style="margin-top: 15px; font-size: 14px; color: #444;">
+    <strong>AI Assessment:</strong><br>
+    {{ $json.output.reason }}
+  </p>
+
+</div>
+
+<!-- The following code is for a new lead inquiring that is not urgent (Warm Category) -->
+<div style="font-family: Arial, sans-serif; max-width: 500px; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+  <h2 style="color: #f57c00; margin-bottom: 5px;">📋 New Patient Inquiry</h2>
+  <p style="color: #666; margin-top: 0;">Recommended: follow up same day</p>
+  <hr style="border: none; border-top: 1px solid #eee;">
+  
+  <table style="width: 100%; margin-top: 15px; font-size: 15px;">
+    <tr>
+      <td style="padding: 6px 0; color: #888; width: 130px;">Patient Name</td>
+      <td style="padding: 6px 0; font-weight: bold;">{{ $('Typeform Trigger').item.json['Full Name'] }}</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px 0; color: #888;">Phone</td>
+      <td style="padding: 6px 0; font-weight: bold;">{{ $('Typeform Trigger').item.json['Phone Number'] }}</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px 0; color: #888;">Service Needed</td>
+      <td style="padding: 6px 0;">{{ $('Typeform Trigger').item.json['What do you need help with?'] }}</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px 0; color: #888;">Pain Level</td>
+      <td style="padding: 6px 0;">{{ $('Typeform Trigger').item.json['On a scale of 1-10, how much pain or discomfort are you in right now?'] }}/10</td>
+    </tr>
+  </table>
+  
+  <hr style="border: none; border-top: 1px solid #eee; margin-top: 15px;">
+  <p style="margin-top: 15px; font-size: 14px; color: #444;">
+    <strong>AI Assessment:</strong><br>
+    {{ $('AI Agent').item.json.output.reason }}
+  </p>
+</div>
+
+<!-- Gmail Styling for Cold Category -->
+<div style="font-family: Arial, sans-serif; max-width: 500px; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+  <h2 style="color: #546e7a; margin-bottom: 5px;">📥 New Inquiry Logged</h2>
+  <p style="color: #666; margin-top: 0;">No immediate action needed — add to nurture list</p>
+  <hr style="border: none; border-top: 1px solid #eee;">
+  
+  <table style="width: 100%; margin-top: 15px; font-size: 15px;">
+    <tr>
+      <td style="padding: 6px 0; color: #888; width: 130px;">Patient Name</td>
+      <td style="padding: 6px 0; font-weight: bold;">{{ $('Typeform Trigger').item.json['Full Name'] }}</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px 0; color: #888;">Email</td>
+      <td style="padding: 6px 0;">{{ $('Typeform Trigger').item.json['What is your email? (Optional)'] }}</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px 0; color: #888;">Service Interest</td>
+      <td style="padding: 6px 0;">{{ $('Typeform Trigger').item.json['What do you need help with?'] }}</td>
+    </tr>
+  </table>
+  
+  <hr style="border: none; border-top: 1px solid #eee; margin-top: 15px;">
+  <p style="margin-top: 15px; font-size: 14px; color: #444;">
+    <strong>AI Assessment:</strong><br>
+    {{ $('AI Agent').item.json.output.reason }}
+  </p>
+</div>
+
